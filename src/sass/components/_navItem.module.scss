@@ -1,0 +1,32 @@
+@import "../abstract/variables";
+
+.navItem {
+  width: calc($nav-size * 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .iconButton {
+    $button-size: calc($nav-size * 0.5);
+    width: $button-size;
+    height: $button-size;
+    background-color: $bg-accent;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: filter 300ms;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    svg {
+      fill: $text-color;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

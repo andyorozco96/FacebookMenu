@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  background: #151616;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+svg {
+  fill: $text-color;
+  width: 20px;
+  height: 20px;
+}
+
+.iconButton {
+  $button-size: calc($nav-size * 0.5);
+  width: $button-size;
+  height: $button-size;
+  background-color: $bg-accent;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: filter 300ms;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  svg {
+    fill: $text-color;
+    width: 20px;
+    height: 20px;
+  }
+}

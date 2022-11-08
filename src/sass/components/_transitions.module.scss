@@ -1,0 +1,43 @@
+@import "../abstract/variables";
+
+.menuPrimaryEnter {
+  position: absolute;
+  transform: translateX(-100%);
+}
+.menuPrimaryEnterActive {
+  max-width: 90% !important;
+  transform: translateX(0%);
+  transition: all $speed ease;
+}
+.menuPrimaryExit {
+  position: absolute;
+}
+.menuPrimaryExitActive {
+  max-width: 90% !important;
+  transform: translateX(-100%);
+  transition: all $speed ease;
+
+  svg {
+    transform: rotate(90deg);
+    transition: rotate $speed ease;
+  }
+}
+.menuSecondaryEnter {
+  position: absolute;
+  transform: translateX(100%);
+}
+.menuSecondaryEnterActive {
+  max-width: 90% !important;
+  position: absolute;
+  transform: translateX(0%);
+  transition: all $speed ease;
+}
+.menuSecondaryExit {
+  position: absolute;
+}
+.menuSecondaryExitActive {
+  max-width: 90% !important;
+  position: absolute;
+  transform: translateX(100%);
+  transition: all $speed ease;
+}
